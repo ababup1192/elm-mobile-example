@@ -2,9 +2,8 @@ module Main exposing (main)
 
 import Browser
 import Html exposing (..)
-import Html.Attributes exposing (attribute, checked, class, for, id, name, type_, value)
-import Html.Events exposing (on, onCheck, onInput, targetValue)
-import Json.Decode as Json
+import Html.Attributes exposing (attribute, class, type_, value)
+import Html.Events exposing (onInput)
 import Svg as Svg
 import Svg.Attributes as SvgAttr
 
@@ -57,7 +56,50 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div [ class "container" ]
-        [ searchView model.searchWord ]
+        [ searchView model.searchWord
+        , div [ class "UUbT9" ]
+            [ ul [ class "aajZCb" ]
+                [ li [ class "sbct" ]
+                    [ div [ class "sbic sb42" ]
+                        []
+                    , div [ class "sbtc" ]
+                        [ div [ class "sbl1" ]
+                            [ span []
+                                [ text "test                                "
+                                , b []
+                                    [ text "test" ]
+                                ]
+                            ]
+                        ]
+                    , div [ class "sbei" ]
+                        []
+                    , div [ class "sbab" ]
+                        [ span [ class "sbqa" ]
+                            [ text "x" ]
+                        ]
+                    ]
+                , li [ class "sbct" ]
+                    [ div [ class "sbic sb43" ]
+                        []
+                    , div [ class "sbtc" ]
+                        [ div [ class "sbl1" ]
+                            [ span []
+                                [ text "test                                "
+                                , b []
+                                    [ text "test" ]
+                                ]
+                            ]
+                        ]
+                    , div [ class "sbei" ]
+                        []
+                    , div [ class "sbab" ]
+                        [ div [ class "sbqb" ]
+                            []
+                        ]
+                    ]
+                ]
+            ]
+        ]
 
 
 searchView : String -> Html Msg
