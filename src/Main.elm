@@ -94,7 +94,7 @@ searchView searchWord =
                     []
                 ]
             ]
-        , button [ class "Tg7LZd" ]
+        , button [ class "Tg7LZd", onClick <| SaveHistory searchWord ]
             [ div [ class "gBCQ5d" ]
                 [ span [ class "z1asCe" ]
                     [ Svg.svg [ attribute "focusable" "false", SvgAttr.viewBox "0 0 24 24", attribute "xmlns" "http://www.w3.org/2000/svg" ]
